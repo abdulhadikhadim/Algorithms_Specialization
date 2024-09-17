@@ -23,6 +23,7 @@ def process_queries(queries):
         if cur_query.type == 'add':
             # Add or update the name for the given number
             phone_book[cur_query.number] = cur_query.name
+            print(cur_query)
         elif cur_query.type == 'del':
             # Remove the number from the phone book if it exists
             if cur_query.number in phone_book:
